@@ -7,6 +7,15 @@ class Client {
 	private $codePostal;
 	private $ville;
 
+	public function _contruct($id, $nom, $adresse, $codePostal, $ville) {
+		$this->id = $id;
+		$this->nom = $nom;
+		$this->adresse = $adresse;
+		$this->codePostal = $codePostal;
+		$this->ville = $ville;
+		
+	}
+
 	public function getId() {
 		return $this->id;
 	}
